@@ -20,7 +20,7 @@ public class UserServiceTest {
     @Test
     void userRegister() {
         String userAccount = "yupi";
-        String userPassword = "";
+        String userPassword = "123456";
         String checkPassword = "123456";
         try {
             long result = userService.userRegister(userAccount, userPassword, checkPassword);

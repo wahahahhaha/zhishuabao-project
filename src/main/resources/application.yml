@@ -199,4 +199,4 @@ knife4j:
       default:
         api-rule: package
         api-rule-resources:
-          - com.yupi.zhishuabao.controller
+          - com.zhishuabao.controller
