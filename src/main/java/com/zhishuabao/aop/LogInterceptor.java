@@ -27,7 +27,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
-    @Around("execution(* com.zhishuabao.controller.*.*(..))")
+    @Around("execution(* com.yupi.zhishuabao.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
         StopWatch stopWatch = new StopWatch();
