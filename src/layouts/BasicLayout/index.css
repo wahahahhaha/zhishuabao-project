@@ -5,3 +5,32 @@
 .ant-pro-layout-top {
   height: 100%;
 }
+/* index.css 或 SearchInput.css */
+#basicLayout {
+  background-color: #f0f2f5; /* 浅白色 */
+}
+
+.ant-layout-header {
+  background-color: #ffffff !important; /* 白色头部 */
+}
+
+.ant-layout-footer {
+  background-color: #1890ff !important; /* 蓝色底部 */
+  color: #ffffff !important;
+}
+
+.ant-input-affix-wrapper {
+  background-color: #ffffff !important; /* 搜索框背景 */
+  border: 1px solid #1890ff !important; /* 蓝色边框 */
+  border-radius: 25px;
+}
+
+.ant-input:focus {
+  border-color: #1890ff !important;
+}
+
+/* 其他自定义样式 */
+.ant-menu-item-selected {
+  background-color: #1890ff !important;
+  color: #ffffff !important;
+}
