@@ -56,14 +56,14 @@ export default function BasicLayout({ children }: Props) {
       }}
     >
       <ProLayout
-        title="面试鸭刷题平台"
+        title="智刷宝"
         layout="top"
         logo={
           <Image
             src="/assets/logo.png"
             height={32}
             width={32}
-            alt="面试鸭刷题网站 - 程序员鱼皮"
+            alt="智刷宝 - HLM"
           />
         }
         location={{
@@ -72,7 +72,7 @@ export default function BasicLayout({ children }: Props) {
         avatarProps={{
           src: loginUser.userAvatar || "/assets/logo.png",
           size: "small",
-          title: loginUser.userName || "鱼皮鸭",
+          title: loginUser.userName || "用户",
           render: (props, dom) => {
             if (!loginUser.id) {
               return (
@@ -121,7 +121,7 @@ export default function BasicLayout({ children }: Props) {
             <SearchInput key="search" />,
             <a
               key="github"
-              href="https://github.com/liyupi/zhishuabao-next"
+              href="https://github.com/wahahahhaha/zhishuabao-project"
               target="_blank"
             >
               <GithubFilled key="GithubFilled" />

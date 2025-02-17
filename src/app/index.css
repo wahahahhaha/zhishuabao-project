@@ -1,2 +1,6 @@
 #homePage {
 }
+/* 链接悬停效果 */
+.hover-link:hover {
+    color: #40a9ff !important; /* 更亮的蓝色 */
+}
