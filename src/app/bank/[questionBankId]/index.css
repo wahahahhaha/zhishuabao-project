@@ -1,3 +1,58 @@
 #bankPage {
-    width: 100%;
+    background: linear-gradient(135deg, #e6f7ff, #f0f8ff); /* 蓝白色渐变背景 */
+    min-height: 100vh; /* 确保背景覆盖整个页面高度 */
+    padding: 40px 20px; /* 增加内边距 */
+}
+
+.bankPageContainer {
+    max-width: 1200px; /* 限制内容宽度 */
+    margin: 0 auto; /* 居中 */
+}
+
+.bankHeaderCard {
+    background: white;
+    border-radius: 12px; /* 圆角 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    padding: 20px;
+    margin-bottom: 20px; /* 与下方内容的间距 */
+}
+
+.bankTitle {
+    font-size: 2rem; /* 更大的标题字体 */
+    font-weight: bold;
+    color: #1890ff; /* 蓝色标题 */
+    margin-bottom: 16px; /* 标题与描述之间的间距 */
+}
+
+.bankDescription {
+    font-size: 1rem;
+    color: #666; /* 描述文字颜色 */
+    margin-bottom: 20px; /* 描述与按钮之间的间距 */
+}
+
+.startButton {
+    background-color: #1890ff; /* 按钮背景色 */
+    border: none;
+    border-radius: 20px; /* 圆角按钮 */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* 按钮文字颜色 */
+    transition: background-color 0.3s ease; /* 悬停动画 */
+}
+
+.startButton:hover {
+    background-color: #40a9ff; /* 悬停时按钮颜色变浅 */
+}
+
+.startButton:disabled {
+    background-color: #ccc; /* 禁用状态按钮颜色 */
+    cursor: not-allowed;
+}
+
+.questionListContainer {
+    background: white;
+    border-radius: 12px; /* 圆角 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    padding: 20px;
 }

@@ -39,37 +39,42 @@ export default async function BankPage({ params }) {
   }
 
   return (
-    <div id="bankPage" className="max-width-content">
-      <Card>
-        <Meta
-          avatar={<Avatar src={bank.picture} size={72} />}
-          title={
-            <Title level={3} style={{ marginBottom: 0 }}>
-              {bank.title}
-            </Title>
-          }
-          description={
-            <>
-              <Paragraph type="secondary">{bank.description}</Paragraph>
-              <Button
-                type="primary"
-                shape="round"
-                href={`/bank/${questionBankId}/question/${firstQuestionId}`}
-                target="_blank"
-                disabled={!firstQuestionId}
-              >
-                开始刷题
-              </Button>
-            </>
-          }
-        />
-      </Card>
-      <div style={{ marginBottom: 16 }} />
-      <QuestionList
-        questionBankId={questionBankId}
-        questionList={bank.questionPage?.records ?? []}
-        cardTitle={`题目列表（${bank.questionPage?.total || 0}）`}
-      />
-    </div>
+      <div id="bankPage">
+        <div className="bankPageContainer">
+          {/* 题库头部信息卡片 */}
+          <Card className="bankHeaderCard">
+            <Meta
+                avatar={<Avatar src={bank.picture} size={72} />}
+                title={<div className="bankTitle">{bank.title}</div>}
+                description={
+                  <>
+                    <Paragraph className="bankDescription">
+                      {bank.description}
+                    </Paragraph>
+                    <Button
+                        className="startButton"
+                        type="primary"
+                        shape="round"
+                        href={`/bank/${questionBankId}/question/${firstQuestionId}`}
+                        target="_blank"
+                        disabled={!firstQuestionId}
+                    >
+                      开始刷题
+                    </Button>
+                  </>
+                }
+            />
+          </Card>
+
+          {/* 题目列表 */}
+          <div className="questionListContainer">
+            <QuestionList
+                questionBankId={questionBankId}
+                questionList={bank.questionPage?.records ?? []}
+                cardTitle={`题目列表（${bank.questionPage?.total || 0}）`}
+            />
+          </div>
+        </div>
+      </div>
   );
 }

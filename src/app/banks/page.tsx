@@ -25,9 +25,13 @@ export default async function BanksPage() {
   }
 
   return (
-    <div id="banksPage" className="max-width-content">
-      <Title level={3}>题库大全</Title>
-      <QuestionBankList questionBankList={questionBankList} />
-    </div>
+      <div id="banksPage">
+        <div className="banksPageContainer">
+          {/* 使用新的标题样式 */}
+          <h1 className="banksPageTitle">题库大全</h1>
+          {/* 保留原有的 QuestionBankList 组件 */}
+          <QuestionBankList questionBankList={questionBankList} />
+        </div>
+      </div>
   );
 }
