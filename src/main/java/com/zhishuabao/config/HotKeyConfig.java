@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @author <a href="https://github.com/wahahahhaha">被遗忘的南极熊</a>
  *
  */
-// todo 取消注释开启 HotKey（须先配置 HotKey）
+//  取消注释开启 HotKey（须先配置 HotKey）
 @Configuration
 @ConfigurationProperties(prefix = "hotkey")
 @Data

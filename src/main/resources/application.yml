@@ -13,12 +13,12 @@ spring:
       matching-strategy: ant_path_matcher
   # session 配置
   session:
-    # todo 取消注释开启分布式 session（须先配置 Redis）
+    #  取消注释开启分布式 session（须先配置 Redis）
     # store-type: redis
     # 30 天过期
     timeout: 2592000
   # 数据库配置
-  # todo 需替换配置
+  #  需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/zhishuabao
@@ -92,7 +92,7 @@ spring:
         allow: 127.0.0.1 # 允许访问的地址，如果allow没有配置或者为空，则允许所有访问
         deny: # 拒绝访问的地址，deny优先于allow，如果在deny列表中，就算在allow列表中，也会被拒绝
   # Redis 配置
-  # todo 需替换配置，然后取消注释
+  #  需替换配置，然后取消注释
   redis:
     database: 1
     host: localhost
@@ -100,7 +100,7 @@ spring:
     timeout: 5000
 #    password: 123456
   # Elasticsearch 配置
-  # todo 需替换配置，然后取消注释
+  #  需替换配置，然后取消注释
   elasticsearch:
     uris: http://localhost:9200
     username: root

@@ -22,7 +22,7 @@ import java.util.List;
  * @author <a href="https://github.com/wahahahhaha">被遗忘的南极熊</a>
  *  
  **/
-// todo 取消注释开启 ES（须先配置 ES）
+//  取消注释开启 ES（须先配置 ES）
 @Document(indexName = "post")
 @Data
 public class PostEsDTO implements Serializable {
