@@ -30,15 +30,20 @@ export default async function QuestionsPage({ searchParams }) {
   }
 
   return (
-    <div id="questionsPage" className="max-width-content">
-      <Title level={3}>题目大全</Title>
-      <QuestionTable
-        defaultQuestionList={questionList}
-        defaultTotal={total}
-        defaultSearchParams={{
-          title: searchText,
-        }}
-      />
-    </div>
+      <div id="questionsPage" className="max-width-content blue-white-theme">
+        <div className="header-section">
+          <Title level={2} className="page-title">题目大全</Title>
+          <p className="page-description">探索各种题目，提升你的技能</p>
+        </div>
+        <div className="content-section">
+          <QuestionTable
+              defaultQuestionList={questionList}
+              defaultTotal={total}
+              defaultSearchParams={{
+                title: searchText,
+              }}
+          />
+        </div>
+      </div>
   );
 }
