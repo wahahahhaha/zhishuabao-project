@@ -1,2 +1,69 @@
-#homePage {
+/* 蓝白色主题 */
+.blue-white-theme {
+    background-color: #f0f8ff; /* 浅蓝色背景 */
+    color: #003366; /* 深蓝色文字 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 页面容器 */
+.ant-pro-page-container {
+    background-color: #ffffff; /* 白色背景 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+/* 表格样式 */
+.ant-table {
+    background-color: #ffffff; /* 白色表格背景 */
+}
+
+.ant-table-thead > tr > th {
+    background-color: #0056b3; /* 蓝色表头背景 */
+    color: #ffffff; /* 白色表头文字 */
+}
+
+.ant-table-tbody > tr > td {
+    color: #003366; /* 深蓝色表格文字 */
+}
+
+/* 按钮样式 */
+.ant-btn-primary {
+    background-color: #0073e6; /* 蓝色按钮背景 */
+    border-color: #0073e6; /* 蓝色按钮边框 */
+}
+
+.ant-btn-primary:hover {
+    background-color: #0056b3; /* 深蓝色按钮背景（悬停效果） */
+    border-color: #0056b3; /* 深蓝色按钮边框（悬停效果） */
+}
+
+/* 链接样式 */
+.ant-typography-link {
+    color: #0073e6; /* 蓝色链接 */
+}
+
+.ant-typography-link:hover {
+    color: #0056b3; /* 深蓝色链接（悬停效果） */
+}
+
+/* 模态框样式 */
+.ant-modal-content {
+    background-color: #ffffff; /* 白色背景 */
+    border-radius: 8px;
+}
+
+.ant-modal-header {
+    background-color: #0056b3; /* 蓝色标题背景 */
+    color: #ffffff; /* 白色标题文字 */
+    border-radius: 8px 8px 0 0;
+}
+
+.ant-modal-title {
+    color: #ffffff; /* 白色标题文字 */
+}
+
+.ant-modal-footer {
+    border-top: 1px solid #f0f0f0; /* 浅灰色边框 */
 }
