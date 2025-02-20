@@ -1,2 +1,57 @@
-#questionAdminPage {
+/* 设置背景色和基础颜色 */
+body {
+    background-color: #f4f6f9; /* 淡灰色背景 */
+    color: #333; /* 深色字体 */
+}
+
+/* 页面容器 */
+.question-admin-container {
+    background-color: #fff; /* 白色背景 */
+    border-radius: 8px;
+    padding: 24px;
+}
+
+/* 按钮样式 */
+.ant-btn-primary {
+    background-color: #1890ff; /* 蓝色按钮 */
+    border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+    background-color: #40a9ff; /* 蓝色按钮 hover */
+    border-color: #40a9ff;
+}
+
+.ant-btn-danger {
+    background-color: #ff4d4f; /* 红色删除按钮 */
+    border-color: #ff4d4f;
+}
+
+.ant-btn-danger:hover {
+    background-color: #ff7875; /* 红色删除按钮 hover */
+    border-color: #ff7875;
+}
+
+/* 头部标题 */
+.ant-page-header-title {
+    color: #1890ff; /* 蓝色标题 */
+}
+
+/* 表格行悬停背景色 */
+.ant-table-row:hover {
+    background-color: #f0f5ff; /* 浅蓝色悬浮背景 */
+}
+
+/* 表格头部 */
+.ant-table-thead > tr > th {
+    background-color: #e6f7ff; /* 浅蓝色表头 */
+}
+
+/* 表格操作按钮 */
+.ant-typography > .ant-typography-link {
+    color: #1890ff; /* 蓝色文字 */
+}
+
+.ant-typography > .ant-typography-link:hover {
+    color: #40a9ff; /* 蓝色文字 hover */
 }
